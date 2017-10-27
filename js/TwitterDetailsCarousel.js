@@ -54,6 +54,7 @@ TwitterDetailsCarousel = new Class({
         this.detailsMap = detailsMap;
         this.dataProvider = dataProvider;
         this.container = container;
+		
         this.legendFontDelta = this.options.fontSize - this.options.legendFontSize;
         this.canvas = new Element('canvas');
         this.canvas.width = this.options.width;
@@ -266,19 +267,21 @@ TwitterDetailsCarousel = new Class({
     drawText : function (text) {
         this.context.fillText(text, 0, this.context.textBaseline == "top" ? 0 : this.options.fontSize + this.options.fontSize * this.options.fontOffset);
     },
-    initTextContext : function (context, style, isLegend) {
+    initTextContext : function (context, style, weight, isLegend) {
         if(!context)
           context = this.context;
         if(!style)
             style = "regular";
+		if(!weight)
+			weight = 400;
         var c = context;
         c.fillStyle = this.options.fgColor;
         switch(style) {
             case "regular":
-                c.font = this.options.fontSize + "px Ubuntu";//, Ubuntu Beta, UbuntuBeta";
+                c.font = weight + " " + this.options.fontSize + "px Ubuntu";//, Ubuntu Beta, UbuntuBeta";
                 break;
             default:
-                c.font = style + " " + (isLegend ? this.options.legendFontSize : this.options.fontSize) + "px Ubuntu";
+                c.font = weight + " " + style + " " + (isLegend ? this.options.legendFontSize : this.options.fontSize) + "px Ubuntu";
                 break;
         }
         c.textBaseline = "top"; //alphabetic";// "top" wasn't working the same across browsers :S
@@ -324,7 +327,7 @@ TwitterDetailsCarousel = new Class({
                     index -= line.length+1;
                 }
             }
-            this.initTextContext(null, tweet.style);
+            this.initTextContext(null, tweet.style, tweet.fontWeight);
             text = tweet.lines[i].substr(0,index);
             d.textX = c.measureText(text).width + c.measureText(d.lett).width * d.x;
             d.textY = i * this.options.fontSize * this.options.lineSpacing + this.options.fontSize * d.y;
@@ -339,7 +342,7 @@ TwitterDetailsCarousel = new Class({
             index = this.randomIndexOf(tweet.time, d.lett);
             text = tweet.time.substr(index);
             // log("time after text:\"" + text + "\"");
-            this.initTextContext(null, "italic", true);
+            this.initTextContext(null, "italic", null, true);
             d.textX = x - c.measureText(text).width + c.measureText(d.lett).width * d.x;
             d.textY = tweet.lines.length * this.options.fontSize * this.options.lineSpacing + this.options.legendFontSize * d.y + this.legendFontDelta;
             details.push(d);
@@ -354,7 +357,7 @@ TwitterDetailsCarousel = new Class({
             index = this.randomIndexOf(tweet.author, d.lett);
             text = tweet.author.substr(index);
             // log("author after text:" + text + "\"");
-            this.initTextContext(null, "bold", true);
+            this.initTextContext(null, "bold", null, true);
             d.textX = x - c.measureText(text).width + c.measureText(d.lett).width * d.x;
             d.textY = tweet.lines.length * this.options.fontSize * this.options.lineSpacing + this.options.legendFontSize * d.y + this.legendFontDelta;
             details.push(d);
@@ -383,11 +386,11 @@ TwitterDetailsCarousel = new Class({
     showAllTweet : function () {
         this.revealAnimatorX.start(this.currentCameraX, this.textWidth * .5);
         this.revealAnimatorY.start(this.currentCameraY, this.textHeight * .5);
-        this.revealAnimatorZ.start(this.currentCameraZoom, (this.options.width / this.textWidth) * 0.9);
+        this.revealAnimatorZ.start(this.currentCameraZoom, (this.options.width / this.textWidth) * 0.9 * 0.8);
     },
     drawTweet : function (tweet, context) {
         var c = context || this.context;
-        this.initTextContext(c, tweet.style);
+        this.initTextContext(c, tweet.style, tweet.fontWeight);
         var y = c.textBaseline == "top" ? 0 : this.options.fontSize + this.options.fontSize * this.options.fontOffset;
         var line;
         for(var i=0; i<tweet.lines.length; i++) {
@@ -396,20 +399,20 @@ TwitterDetailsCarousel = new Class({
             y += this.options.fontSize * this.options.lineSpacing;
         }
         y += this.legendFontDelta;
-        this.initTextContext(c, "italic", true);
+        this.initTextContext(c, "italic", null, true);
         var text = " - " + tweet.time;
         var w = c.measureText(text).width;
         var x = tweet.width - w;
         c.fillText(text, x, y);
 
-        this.initTextContext(c, "bold", true);
+        this.initTextContext(c,"bold", null, true);
         text = "@" + tweet.author;
         x-= c.measureText(text).width;
         c.fillText(text, x, y);
     },
     splitTweet : function (tweet, context) {
         var c = context || this.context;
-        this.initTextContext(c, tweet.style);
+        this.initTextContext(c, tweet.style, tweet.fontWeight);
         tweet.split(c, this.options.width);
         tweet.height = (tweet.lines.length + 1) * this.options.fontSize * this.options.lineSpacing;
     },

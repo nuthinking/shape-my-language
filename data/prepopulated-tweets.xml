@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom'
+    xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/'
+    xmlns:gs='http://schemas.google.com/spreadsheets/2006'
+    xmlns:batch='http://schemas.google.com/gdata/batch'>
+    <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values</id>
+    <updated>2011-01-02T13:48:28.293Z</updated>
+    <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+    <title type='text'>Prepopulated tweet</title>
+    <link rel='alternate' type='text/html' href='https://spreadsheets.google.com/pub?key=0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc'/>
+    <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values'/>
+    <link rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/batch'/>
+    <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values'/>
+    <author>
+        <name>christian.giordano</name>
+        <email>christian.giordano@canonical.com</email>
+    </author>
+    <openSearch:totalResults>32</openSearch:totalResults>
+    <openSearch:startIndex>1</openSearch:startIndex>
+    <gs:rowCount>100</gs:rowCount>
+    <gs:colCount>20</gs:colCount>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R1C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A1</title>
+        <content type='text'>Text</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R1C1'/>
+        <gs:cell row='1' col='1'>Text</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R1C2</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>B1</title>
+        <content type='text'>User</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R1C2'/>
+        <gs:cell row='1' col='2'>User</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R1C3</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>C1</title>
+        <content type='text'>Time</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R1C3'/>
+        <gs:cell row='1' col='3'>Time</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R2C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A2</title>
+        <content type='text'>The quarter is coming to a close, getting all my work in, and making sure I do well! After today, I am officially done with regular classes.</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R2C1'/>
+        <gs:cell row='2' col='1'>The quarter is coming to a close, getting all my work in, and making sure I do well! After today, I am officially done with regular classes.</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R3C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A3</title>
+        <content type='text'>so happy today, im back working my regular schedule and im feeling like money lol</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R3C1'/>
+        <gs:cell row='3' col='1'>so happy today, im back working my regular schedule and im feeling like money lol</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R4C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A4</title>
+        <content type='text'>Does anyone know how to put jelly in regular donuts. When did people stop making jelly donuts?!!</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R4C1'/>
+        <gs:cell row='4' col='1'>Does anyone know how to put jelly in regular donuts. When did people stop making jelly donuts?!!</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R5C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A5</title>
+        <content type='text'>i guess all i had to do was tweet about it...now back to my regular schedule program!</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R5C1'/>
+        <gs:cell row='5' col='1'>i guess all i had to do was tweet about it...now back to my regular schedule program!</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R6C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A6</title>
+        <content type='text'>With Epcot Center the Disney corporation has accomplished something I didn't think possible in today's world. They have created a land of make-believe that's worse than regular life.</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R6C1'/>
+        <gs:cell row='6' col='1'>With Epcot Center the Disney corporation has accomplished something I didn't think possible in today's world. They have created a land of make-believe that's worse than regular life.</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R6C2</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>B6</title>
+        <content type='text'> PJORourke</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R6C2'/>
+        <gs:cell row='6' col='2'> PJORourke</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R6C3</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>C6</title>
+        <content type='text'>10 years ago</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R6C3'/>
+        <gs:cell row='6' col='3'>10 years ago</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R7C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A7</title>
+        <content type='text'>Einstein was a bold mathematician. a difficult problem needing a bold answer.</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R7C1'/>
+        <gs:cell row='7' col='1'>Einstein was a bold mathematician. a difficult problem needing a bold answer.</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R8C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A8</title>
+        <content type='text'>Why do I bother to write in large bold letters 'please track changes' when everyone ignores my request?</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R8C1'/>
+        <gs:cell row='8' col='1'>Why do I bother to write in large bold letters 'please track changes' when everyone ignores my request?</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R9C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A9</title>
+        <content type='text'>It is better to be bold than too circumspect, because fortune is of a sex which likes not a tardy wooer and repulses all who are not ardent</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R9C1'/>
+        <gs:cell row='9' col='1'>It is better to be bold than too circumspect, because fortune is of a sex which likes not a tardy wooer and repulses all who are not ardent</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R10C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A10</title>
+        <content type='text'>The trust I have is in mine innocence, and therefore am I bold and resolute.</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R10C1'/>
+        <gs:cell row='10' col='1'>The trust I have is in mine innocence, and therefore am I bold and resolute.</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R10C2</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>B10</title>
+        <content type='text'>WilliamShakespeare</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R10C2'/>
+        <gs:cell row='10' col='2'>WilliamShakespeare</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R10C3</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>C10</title>
+        <content type='text'>400 years ago</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R10C3'/>
+        <gs:cell row='10' col='3'>400 years ago</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R11C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A11</title>
+        <content type='text'>Whatever you can do or dream you can, begin it. Boldness has genius, power, and magic in it.</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R11C1'/>
+        <gs:cell row='11' col='1'>Whatever you can do or dream you can, begin it. Boldness has genius, power, and magic in it.</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R11C2</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>B11</title>
+        <content type='text'>JohannWolfgangGoethe</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R11C2'/>
+        <gs:cell row='11' col='2'>JohannWolfgangGoethe</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R11C3</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>C11</title>
+        <content type='text'>200 years ago</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R11C3'/>
+        <gs:cell row='11' col='3'>200 years ago</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R12C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A12</title>
+        <content type='text'>Most of our obstacles would melt away if, instead of cowering before them, we should make up our minds to walk boldly through them.</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R12C1'/>
+        <gs:cell row='12' col='1'>Most of our obstacles would melt away if, instead of cowering before them, we should make up our minds to walk boldly through them.</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R12C2</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>B12</title>
+        <content type='text'>OrisonSwettMarden</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R12C2'/>
+        <gs:cell row='12' col='2'>OrisonSwettMarden</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R12C3</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>C12</title>
+        <content type='text'>100 years ago</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R12C3'/>
+        <gs:cell row='12' col='3'>100 years ago</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R13C1</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>A13</title>
+        <content type='text'>Question with boldness even the existence of God; because, if there is one, he must more approve of the homage of reason than that of blindfolded faith.</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R13C1'/>
+        <gs:cell row='13' col='1'>Question with boldness even the existence of God; because, if there is one, he must more approve of the homage of reason than that of blindfolded faith.</gs:cell>
+    </entry>
+    <entry>
+        <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R13C2</id>
+        <updated>2011-01-02T13:48:28.293Z</updated>
+        <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+        <title type='text'>B13</title>
+        <content type='text'>ThomasJefferson</content>
+        <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R13C2'/>
+        <gs:cell row='13' col='2'>ThomasJefferson</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R13C3</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>C13</title>
+       <content type='text'>200 years ago</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R13C3'/>
+       <gs:cell row='13' col='3'>200 years ago</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R14C1</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>A14</title>
+       <content type='text'>Always the italic font, because it shows graphic taste. Sometimes accompanied by a Taz sticker.</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R14C1'/>
+       <gs:cell row='14' col='1'>Always the italic font, because it shows graphic taste. Sometimes accompanied by a Taz sticker.</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R15C1</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>A15</title>
+       <content type='text'>Everything looks different in italic</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R15C1'/>
+       <gs:cell row='15' col='1'>Everything looks different in italic</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R16C1</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>A16</title>
+       <content type='text'>Holy damn it, who designs in 10pt Arial Italic on the web and feels good about it? This is madness!</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R16C1'/>
+       <gs:cell row='16' col='1'>Holy damn it, who designs in 10pt Arial Italic on the web and feels good about it? This is madness!</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R17C1</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>A17</title>
+       <content type='text'>I'm pretty bold. Well, more bold than italic, anyway.</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R17C1'/>
+       <gs:cell row='17' col='1'>I'm pretty bold. Well, more bold than italic, anyway.</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R18C1</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>A18</title>
+       <content type='text'>At the end it's always been me. Always. Bold underline italic it! I'm the one who's gonna explode alone.</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R18C1'/>
+       <gs:cell row='18' col='1'>At the end it's always been me. Always. Bold underline italic it! I'm the one who's gonna explode alone.</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R19C1</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>A19</title>
+       <content type='text'>It is a joy to see how much emotions can be stirred by something as seemingly insignificant like a letter design!</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R19C1'/>
+       <gs:cell row='19' col='1'>It is a joy to see how much emotions can be stirred by something as seemingly insignificant like a letter design!</gs:cell>
+   </entry>
+   <entry>
+       <id>https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R19C2</id>
+       <updated>2011-01-02T13:48:28.293Z</updated>
+       <category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/>
+       <title type='text'>B19</title>
+       <content type='text'>BrunoMaag</content>
+       <link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0AiwGIA90dbK1dGJ3TkJubWxacUNScjRMLVNvWnI5Ymc/2/public/values/R19C2'/>
+       <gs:cell row='19' col='2'>BrunoMaag</gs:cell>
+   </entry>
+</feed>

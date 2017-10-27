@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Shape My Language</title>
-        <!--link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'-->
+        <title>Ubuntu Twitter Font</title>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
         <style>
             * {cursor: none;}
             body {
-                background-color: #dd4814;
+                background-color: #DD4814;
                 margin: 0;
                 padding: 0;
                 border: 0;
@@ -25,6 +25,10 @@
                 if (console)
                     console.log(obj);
             }
+			
+			var ubuntuOrange = "#DD4814";
+			var white = "#FFF";
+			var black = "#000";
 
         </script>
 
@@ -74,8 +78,8 @@
                 var options = {
                     width: $(document).getSize().x,
                     height: $(document).getSize().y,
-                    bgColor: "#dd4814",
-                    fgColor: "#FFF",
+                    bgColor: ubuntuOrange,
+                    fgColor: white,
                     hasToDebugDetails: debugDetails && (debugDetails == "1" || debugDetails.toLowerCase() == "true")
                 };
                 if(fast){

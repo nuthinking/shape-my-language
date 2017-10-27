@@ -50,13 +50,14 @@ TweetsProvider = new Class({
 	    var t;
 	    for(var i=0; i<tweetObjs.length; i++){
             t = tweetObjs[i];
-            this.prepopulatedTweets.push(new Tweet(t.text, t.author, t.time, t.style));
+            this.prepopulatedTweets.push(new Tweet(t.text, t.author, t.time, t.style, t.fontWeight));
         }
 	},
 	
 	load : function ()
 	{
-	    this.loadPrepopulated();
+	    //this.loadPrepopulated();
+		this.loadLive();
 	},
 	
 	loadPrepopulated : function ()
@@ -142,7 +143,7 @@ TweetsProvider = new Class({
 	    var t;
 	    for(var i=0; i<objs.length; i++){
 	        t = objs[i];
-	        res.push(new Tweet(t.text, t.from_user, this.generateDate(t), t.style));
+	        res.push(new Tweet(t.text, t.from_user, this.generateDate(t), t.style, t.fontWeight));
 	    }
 	    return res;
 	},
@@ -192,11 +193,11 @@ TweetsProvider = new Class({
 	{
 	    var type = this.getNextTweetTypeToProvide();
 	    var tweet = this.getNextTweetWithType(type);
-	    log(tweet);
+//	    log(tweet);
 	    while(!tweet){
 	        type = this.getNextTweetTypeToProvide();
 	        tweet = this.getNextTweetWithType(type);
-    	    log(tweet);
+//    	    log(tweet);
 	    }
 		// if(!this.tweetsToProvide || this.tweetsToProvide.length == 0){
 		//     this.tweetsToProvide = this.prepopulatedTweets.concat(this.liveTweets); // this needs to be changed

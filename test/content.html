@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Content debugger</title>
-        </script>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
         <script type="text/javascript">
 
             function log(obj) {
@@ -76,8 +76,7 @@
                     }
                     if(isItalic)
                         el.setStyle('font-style', "italic");
-                    if(isBold)
-                        el.setStyle('font-weight', "bold");
+                    el.setStyle('font-weight', t.fontWeight);
                     el.set('html', t.text);
                     div.appendChild(el);
                     

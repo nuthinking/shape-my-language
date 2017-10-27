@@ -103,9 +103,11 @@ function containsSwearing($tweet)
 {
     $swearWords = getSwearWords();
     //echo "check text agains " . count($swearWords) . " swear words";
+    $text = $tweet['text'];
+	$text = preg_replace("/\W/i", '', $text);
     foreach($swearWords as $sw){
-        $pattern = "/\b$sw\b/i";
-        if(preg_match($pattern, $tweet['text'])>0)
+        $pattern = "/$sw/i";
+        if(preg_match($pattern, $text)>0)
             return true;
     }
     return false;
@@ -113,30 +115,9 @@ function containsSwearing($tweet)
 
 function calculateStyle(&$tweet)
 {
-    global $twitterAccount;
-    $tweet['style'] = "";
-    $tweet['isBold'] = false;
-    $tweet['isItalic'] = false;
-    
-    
-    checkHashTag($tweet, $twitterAccount);
-    checkHashTags($tweet);
-    checkStylesInText($tweet);
-    
-    
-    if(!$tweet['isBold'] && !$tweet['isItalic']){
-            $tweet['style'] = "regular";
-    }else{
-        if($tweet['isBold']){
-            $tweet['style'] = "bold";
-        }
-        if($tweet['isItalic']){
-            $tweet['style'] .= (strlen($tweet['style'])>0 ? " " : "") . "italic";
-        }
-    }
-    
-    unset($tweet['isBold']);
-    unset($tweet['isItalic']);
+	$sizes = array(3,4,5,7);
+    $tweet['fontWeight'] = $sizes[rand()% count($sizes)] * 100;
+    $tweet['style'] = ((rand() % 2) == 0 ? "regular" : "italic");
 }
 
 function checkHashTags(&$tweet)

@@ -4,12 +4,13 @@
 
 Tweet = new Class(
 {
-    initialize: function(text, author, time, style, TODAY)
+    initialize: function(text, author, time, style, fontWeight, TODAY)
     {
         this.text = text;
         this.author = author || "anonimous";
         this.time = time || "once upon a time";
         this.style = style;
+		this.fontWeight = fontWeight || 400;
         this.TODAY = TODAY;
         
         this.lines;
