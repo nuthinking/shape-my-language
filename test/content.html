@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Content debugger</title>
+        </script>
+        <script type="text/javascript">
+
+            function log(obj) {
+                if (console)
+                    console.log(obj);
+            }
+
+        </script>
+        <script type="text/javascript" src="../js/mootools-core-1.3-full-compat-yc.js">
+        </script>
+        <script type="text/javascript" src="../js/mootools-more.js">
+        </script>
+        <script type="text/javascript" src="../js/Tweet.js">
+        </script>
+        <script type="text/javascript" src="../js/TweetsProvider.js">
+        </script>
+        <style>
+            body
+            {
+                font-family: Ubuntu, Arial;
+            }
+            p
+            {
+                display: inline;
+            }
+        </style>
+        
+        <script>
+            var tweetsCount = 100;
+            var tp = new TweetsProvider("../php/prepopulated.php", "../php/load.php");
+            
+
+            window.addEvent('domready', function()
+            {
+                tp.addEvent("load", function() {
+                    log("tweets loaded!");
+                    showTweets();
+                });
+                $(document.body).set('html','<p>Loading...</p>');
+                tp.load();
+            });
+            
+            function showTweets ()
+            {
+                $(document.body).set('html','');
+                var t;
+                var el;
+                var div;
+                for(var i=0; i<tweetsCount; i++){
+                    t = tp.getNextTweet();
+                    div = new Element('div');
+                    el = new Element('p');
+                    el.set('html', '<strong>' + (i+1) + ')</strong> ');
+                    div.appendChild(el);
+                    
+                    el = new Element('p');
+                    var isBold = false;
+                    var isItalic = false;
+                    switch(t.style){
+                        case "bold":
+                            isBold = true;
+                            break;
+                        case "italic":
+                            isItalic = true;
+                            break;
+                        case "bold italic":
+                            isBold = true;
+                            isItalic = true;
+                            break;
+                    }
+                    if(isItalic)
+                        el.setStyle('font-style', "italic");
+                    if(isBold)
+                        el.setStyle('font-weight', "bold");
+                    el.set('html', t.text);
+                    div.appendChild(el);
+                    
+                    
+                    el = new Element('p');
+                    el.set('html', ' <strong>by:</strong> ' + t.author + ' <strong>at:</strong> ' + t.time);
+                    div.appendChild(el);
+                    $(document.body).appendChild(div);
+                }
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

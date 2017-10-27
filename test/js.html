@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Javascript test</title>
+        <script type="text/javascript">
+
+            function log(obj) {
+                if (console)
+                    console.log(obj);
+            }
+
+        </script>
+        <script type="text/javascript" src="../js/mootools-core-1.3-full-compat-yc.js">
+        </script>
+        <script type="text/javascript" src="../js/mootools-more.js">
+        </script>
+        <script type="text/javascript" src="../js/Tweet.js">
+        </script>
+        <script type="text/javascript" src="../js/TweetsProvider.js">
+        </script>
+        <script type="text/javascript" src="unittest.utils.js">
+        </script>
+        <script>
+        
+            function testTweet()
+            {
+                var t;
+                    
+                /* time */
+                var today = "Sat Jan 1 00:00:00 +0000 2011";
+                
+                assertEquals("tweet day should handle seconds",
+                    "5 seconds ago",
+                    new Tweet("text", "author", today, "regular", new Date("Sat Jan 1 00:00:05 +0000 2011")).time);
+                    
+                assertEquals("tweet day should handle minutes",
+                    "5 minutes ago",
+                    new Tweet("text", "author", today, "regular", new Date("Sat Jan 1 00:05:00 +0000 2011")).time);
+                    
+                assertEquals("tweet day should handle hours",
+                    "5 hours ago",
+                    new Tweet("text", "author", today, "regular", new Date("Sat Jan 1 05:00:00 +0000 2011")).time);
+                    
+                assertEquals("tweet day should handle days",
+                    "5 days ago",
+                    new Tweet("text", "author", today, "regular", new Date("Thu Jan 6 00:00:00 +0000 2011")).time);
+                    
+                assertEquals("tweet day should handle years",
+                    "5 years ago",
+                    new Tweet("text", "author", today, "regular", new Date("Sat Jan 10 00:00:00 +0000 2015")).time);
+                    
+                /* split */
+                
+                var canvas = new Element('canvas');
+                canvas.width = canvas.height = 800;
+                var context = canvas.getContext('2d');
+                context.font = "100px Ubuntu";
+                context.textBaseline = "top";
+                var maxLineWidth = 1800;
+                
+                t = new Tweet("ooh can't wait for this! Shape My Language at the @designmuseum http://t.co/ZvIWHi5 @DaltonMaag","author",today);
+                t.split(context, maxLineWidth);
+                assertEquals("tweet split should handle min chars count 1",
+                    3,
+                    t.lines.length);
+                t = new Tweet("The quarter is coming to a close, getting all my work in, and making sure I do well! After today, I am officially done with regular classes.","author",today);
+                t.split(context, maxLineWidth);
+                assertEquals("tweet split should handle min chars count 2",
+                    4,
+                    t.lines.length);
+                t = new Tweet("line1\nline2\nline3", "author", today);
+                t.split(context, maxLineWidth);
+                assertEquals("tweet split should handle new lines as \\n",
+                    3,
+                    t.lines.length);
+                t = new Tweet("Like\n\n\n\nthis", "author", today);
+                t.split(context, maxLineWidth);
+                assertEquals("tweet split should handle new lines as \\n",
+                    5,
+                    t.lines.length);
+                    
+                t = new Tweet("How Cool!!!&quot;@DesignMuseum: Font Friday @designmuseum for http://twitpic.com/3u74d5&quot;","author", today);
+                t.split(context, 1024);
+                assertEquals("tweet split should handle tweet with long words",
+                    4,
+                    t.lines.length);
+               
+            }
+            
+            function runTests()
+            {
+                testTweet();
+            }
+            
+            function verifyTests()
+            {
+                var msg = "<strong>Tests passed!</strong>";
+                if(unittestFailures.length>0){
+                    msg = "<strong>Tests failed:</strong></br>" + unittestFailures.join("</br>");
+                }
+                $(document.body).set('html', msg);
+            }
+            
+            window.addEvent('domready', function()
+            {
+                runTests();
+                verifyTests();
+            });
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

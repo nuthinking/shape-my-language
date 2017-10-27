@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Shape My Language</title>
+        <!--link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'-->
+        <style>
+            * {cursor: none;}
+            body {
+                background-color: #dd4814;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: none;
+                overflow:hidden;
+            }
+            canvas {
+                display: block;
+            }
+        </style>
+        </script>
+        <script type="text/javascript">
+
+            function log(obj) {
+                if (console)
+                    console.log(obj);
+            }
+
+        </script>
+
+        <script type="text/javascript" src="js/mootools-core-1.3-full-compat-yc.js">
+        </script>
+        <script type="text/javascript" src="js/mootools-more.js">
+        </script>
+        <script type="text/javascript" src="js/Tweet.js">
+        </script>
+        <script type="text/javascript" src="js/TweetsProvider.js">
+        </script>
+        <script type="text/javascript" src="js/CharacterDetailsMap.js">
+        </script>
+        <script type="text/javascript" src="js/TwitterDetailsCarousel.js">
+        </script>
+        <script type="text/javascript" src="data/details.js">
+        </script>
+        
+        <script>
+            var map = new CharacterDetailsMap();
+            
+            if(!fontDetails){
+                alert("no details specified!");
+            }else{
+                for(var i=0; i<fontDetails.length; i++){
+                    map.addDetail(fontDetails[i]);
+                }
+            }
+            
+            var tp = new TweetsProvider("php/prepopulated.php", "php/load.php");
+
+            var carousel;
+            window.addEvent('domready', function()
+            {
+                if(!(Browser.safari || Browser.chrome)){
+                    alert("Sorry but this application at the moment supports only Safari and Chrome");
+                }else{
+                    start();
+                }
+            });
+            function start ()
+            {
+                var uri = new URI();
+                var debugDetails = uri.getData('debugDetails','query');
+                var fast = uri.getData('fast','query');
+                var skipRefresh = uri.getData('skipRefresh','query');
+                var options = {
+                    width: $(document).getSize().x,
+                    height: $(document).getSize().y,
+                    bgColor: "#dd4814",
+                    fgColor: "#FFF",
+                    hasToDebugDetails: debugDetails && (debugDetails == "1" || debugDetails.toLowerCase() == "true")
+                };
+                if(fast){
+                    options.detailDuration = 1000;
+                    options.allTweetDuration = 3000;
+                    options.revealDuration = 500;
+                }
+                carousel = new TwitterDetailsCarousel("", map, tp, $(document.body), options);
+                if(!debugDetails && !skipRefresh){
+                    log("will refresh page hourly");
+                    refresh.delay(1000 * 60 * 60); // refresh page every 1hr
+                }
+                
+
+                window.addEvent('resize', function() {
+                    carousel.setSize($(document).getSize().x, $(document).getSize().y);
+                });              
+            }
+            
+            function refresh()
+            {
+                carousel.fadeOut();
+                (function(){ window.location.reload(true); }).delay(3000);
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
